@@ -1,0 +1,11 @@
+transformers
+torch
+flask
+llama-cpp-python
+sentence-transformers
+uvicorn
+ctransformers
+langchain
+langchain-community
+python-box
+streamlit

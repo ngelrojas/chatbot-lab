@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "chatbot-lab"
+version = "0.1.0"
+description = "lab about chatbot"
+authors = ["ngel rojas <aomarrojasp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.2"
+transformers = "^4.37.2"
+torch = "^2.2.0"
+llama-cpp-python = "^0.2.44"
+sentence-transformers = "^2.3.1"
+uvicorn = "^0.27.1"
+ctransformers = "^0.2.27"
+langchain = "^0.1.7"
+langchain-community = "^0.0.20"
+python-box = "^7.1.1"
+streamlit = "^1.31.1"
+pre-commit = "^3.6.1"
+flake8 = "^7.0.0"
+pytest = "^8.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 90
+extend-exclude = """
+    /(
+      | backend
+    )/
+"""
